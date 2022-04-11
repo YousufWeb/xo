@@ -1,5 +1,5 @@
 <?php
-date_default_timezone_set('Asia/Baghdad');
+date_default_timezone_set('Africa/Cairo');
 if(!file_exists('config.json')){
 	$token = readline('Enter Token Bot: ');
 	$id = readline('Enter Id Bot: ');
@@ -452,7 +452,7 @@ if($text == '/help'){
           	  file_put_contents('config.json',json_encode($config));
               $for = $config['for'] != null ? $config['for'] : 'Select';
               $count = count(file_get_contents($for));
-date_default_timezone_set('Asia/Baghdad');
+date_default_timezone_set('Africa/Cairo');
               $bot->editMessageText([
                 'chat_id'=>$chatId,
                 'message_id'=>$mid,
